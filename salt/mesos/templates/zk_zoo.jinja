@@ -1,0 +1,7 @@
+dataDir=/var/lib/zookeeper
+tickTime=2000
+initLimit=10
+syncLimit=2
+clientPort={{ pillar['mesos']['client_port'] }}
+{% for i in pillar['mesos']['masters'] %}
+server.{{ loop.index }}={{ i }}:{{ pillar['mesos']['quorum_port'] }}:{{ pillar['mesos']['election_port'] }}{% endfor %}

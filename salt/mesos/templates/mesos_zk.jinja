@@ -1,0 +1,1 @@
+zk://{% for i in pillar['mesos']['masters'] %}{{ i }}:{{ pillar['mesos']['client_port'] }}{% if not loop.last %},{% endif %}{% endfor %}/mesos
