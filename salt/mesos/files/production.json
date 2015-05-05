@@ -1,0 +1,22 @@
+{
+  "Marathon": {
+    "Endpoint": "http://10.13.12.11:8080,http://10.13.12.12:8080,http://10.13.12.13:8080"
+  },
+
+  "Bamboo": {
+    "Endpoint": "http://{{ pillar['net']['eth1']['ip'] }}:8000",
+    "Zookeeper": {
+      "Host": "10.13.12.11:2181,10.13.12.12:2181,10.13.12.13:2181",
+      "Path": "/marathon-haproxy/state",
+      "ReportingDelay": 5
+    }
+  },
+
+  "HAProxy": {
+    "TemplatePath": "/var/bamboo/haproxy_template.cfg",
+    "OutputPath": "/etc/haproxy/haproxy.cfg",
+    "ReloadCommand": "/usr/sbin/service haproxy reload"
+  }
+}
+
+
