@@ -6,11 +6,13 @@ base:
     - mesos.master
     - docker
     - net
-    - haproxy
-    - bamboo
+    - mesos.haproxy
+    - mesos.bamboo
   'E@slave*':
     - mesos
     - mesos.slave
     - docker
-    - haproxy
-    - bamboo
+    - mesos.haproxy
+    - mesos.bamboo
+  'baza1':
+    - postgresql

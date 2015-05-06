@@ -1,5 +1,5 @@
 docker:
-  insecure_registry: docker.otwpw.pl
+  insecure_registry: docker.otwpw.pl:5000
 
 mesos:
   masters:
