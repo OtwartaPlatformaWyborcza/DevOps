@@ -14,5 +14,5 @@ base:
     - docker
     - mesos.haproxy
     - mesos.bamboo
-  'baza1':
+  'baza*':
     - postgresql
