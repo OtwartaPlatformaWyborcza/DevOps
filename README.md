@@ -1,6 +1,10 @@
 # DevOps
 Konfiguracja serwerow
 
+
+## Skrypty
+Konfiguracja serwerów wykonana jest przy pomocy [SaltStack](http://saltstack.com/).
+
 ## Jenkins dev
 
 **Plugins**
