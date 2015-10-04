@@ -15,6 +15,7 @@ Konfiguracja serwerów wykonana jest przy pomocy [SaltStack](http://saltstack.co
 * Green Balls
 * Locale plugin
 * Parameterized Trigger plugin
-
+* promoted builds plugin
+* Embeddable Build Status Plugin
 
 ## Jenkins prod
